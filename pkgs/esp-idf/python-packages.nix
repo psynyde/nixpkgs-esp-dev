@@ -210,6 +210,7 @@ rec {
 
     propagatedBuildInputs = [
       pyyaml
+      rich
     ];
 
     meta = {
