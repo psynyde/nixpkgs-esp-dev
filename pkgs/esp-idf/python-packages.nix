@@ -112,6 +112,8 @@ rec {
       pyserial
       reedsolo
       pyyaml
+      intelhex
+      argcomplete
     ];
 
     # Replaces esptool.py import with .esptool.py-wrapped
