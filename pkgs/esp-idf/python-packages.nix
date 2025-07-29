@@ -246,6 +246,11 @@ rec {
   pyclang = buildPythonPackage rec {
     pname = "pyclang";
     version = "0.6.0";
+    pyproject = true;
+
+    build-system = [
+      setuptools
+    ];
 
     src = fetchPypi {
       inherit pname version;
