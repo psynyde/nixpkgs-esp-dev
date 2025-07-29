@@ -267,6 +267,11 @@ rec {
   freertos_gdb = buildPythonPackage rec {
     pname = "freertos-gdb";
     version = "1.0.4";
+    pyproject = true;
+
+    build-system = [
+      setuptools
+    ];
 
     src = fetchPypi {
       inherit pname version;
