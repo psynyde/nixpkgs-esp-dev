@@ -93,6 +93,11 @@ rec {
     pname = "esptool";
     version = "4.8.1";
 
+    pyproject = true
+    build-system = [
+      setuptools
+    ];
+
     src = fetchPypi {
       inherit pname version;
       sha256 = "sha256-3E7ya2WeGo3LAZFHwOptlJgLNN6Z++CRIceUHIslRTE=";
