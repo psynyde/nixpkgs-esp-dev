@@ -195,6 +195,11 @@ rec {
   esp-idf-size = buildPythonPackage rec {
     pname = "esp-idf-size";
     version = "1.6.1";
+    pyproject = true;
+
+    build-system = [
+      setuptools
+    ];
 
     src = fetchPypi {
       inherit pname version;
