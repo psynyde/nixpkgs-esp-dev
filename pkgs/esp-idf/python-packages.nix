@@ -93,7 +93,7 @@ rec {
     pname = "esptool";
     version = "4.8.1";
 
-    pyproject = true
+    pyproject = true;
     build-system = [
       setuptools
     ];
